@@ -1,0 +1,5 @@
+LIBRARY "BlackCallThreat"
+
+EXPORTS
+	MiniDumpReadDumpStream				= MiniDumpReadDumpStream_trampoline				@1
+	MiniDumpWriteDump					= MiniDumpWriteDump_trampoline					@2

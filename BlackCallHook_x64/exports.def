@@ -1,0 +1,14 @@
+LIBRARY "BlackCallHook_x64"
+
+EXPORTS
+	_1x		= _NtOpenProcess				
+	_1y		= NtOpenProcess_hook				@2
+	
+	_2x		= _NtQueryVirtualMemory				
+	_2y		= NtQueryVirtualMemory_hook			@3
+	
+	_3x		= _NtReadVirtualMemory				
+	_3y		= NtReadVirtualMemory_hook			@4
+
+	_4x		= _NtQuerySystemInformation
+	_4y		= NtQuerySystemInformation_hook		@5
